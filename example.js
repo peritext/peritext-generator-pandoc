@@ -71,7 +71,7 @@ waterfall([
       outputDirPath: path.resolve(__dirname + '/examples'),
       format:'odt',
     }, odt),
-  pdf => 
+  tei => 
     generate({
       story: story,
       contextualizers,
@@ -79,6 +79,6 @@ waterfall([
       locale: exampleLocale,
       tempDirPath: path.resolve(__dirname + '/temp'),
       outputDirPath: path.resolve(__dirname + '/examples'),
-      format:'pdf',
-    }, pdf),
+      format:'tei',
+    }, tei),
 ], err => console.log('all done'))
