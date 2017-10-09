@@ -1,0 +1,49 @@
+{
+  "name": "peritext-generator-pandoc",
+  "version": "0.0.1",
+  "description": "peritext output generator using pandoc",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist; mkdir dist; babel src/index.js -o dist/index.js",
+    "example": "npm run build; node example"
+  },
+  "author": "Robin de Mourat",
+  "license": "ISC",
+  "dependencies": {
+    "@jonny/pandoc-bin": "git+https://github.com/JonnyBurger/pandoc-bin.git",
+    "async": "^2.5.0",
+    "babel-runtime": "^6.26.0",
+    "node-sass": "^4.5.3",
+    "peritext-rendering-utils": "0.0.15",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "simple-pandoc": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-decorators": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-for-of": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "peritext-contextualizer-bib": "0.0.9",
+    "peritext-contextualizer-codefiles": "0.0.8",
+    "peritext-contextualizer-data-presentation": "0.0.8",
+    "peritext-contextualizer-dicto": "0.0.9",
+    "peritext-contextualizer-embed": "0.0.6",
+    "peritext-contextualizer-glossary": "0.0.6",
+    "peritext-contextualizer-image": "0.0.5",
+    "peritext-contextualizer-p5": "0.0.5",
+    "peritext-contextualizer-table": "0.0.4",
+    "peritext-contextualizer-vegalite": "0.0.7",
+    "peritext-contextualizer-video": "0.0.8",
+    "peritext-contextualizer-webpage": "0.0.8",
+    "peritext-template-codex-garlic": "0.0.20"
+  }
+}
